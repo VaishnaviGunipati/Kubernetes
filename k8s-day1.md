@@ -43,7 +43,8 @@ nginx-rc-h52qx   1/1     Running   0          3m55s
 nginx-rc-tqvf8   1/1     Running   0          3m55s
 nginx-rc-xc5mw   1/1     Running   0          3m55s
 ```
-![rc](./IMG/rc.png)
+<img width="2097" height="788" alt="image" src="https://github.com/user-attachments/assets/6b2abbef-e49d-49f4-9cf4-70412d9dbb2c" />
+
 ### Replica Set
 It will manage pods, eventhoe it was not created by replicaset -- with matchLabels
 - if we change Image with existing rc, we need to delete existing POD
@@ -124,10 +125,12 @@ nginx-rs-659kp   1/1     Running   0          4s      app=nginx,env=test
 nginx-rs-lftj9   1/1     Running   0          2m46s   app=nginx,env=test
 ```
 #### Flow Chart's
-![rs-1](./IMG/rs-1.png)
+<img width="2097" height="798" alt="image" src="https://github.com/user-attachments/assets/713ee251-b0fa-4c63-85d6-8b047cd2345a" />
+
 
 #### Replicaset with POD
-![rs-2](./IMG/rs-2.png)
+<img width="2105" height="1296" alt="image" src="https://github.com/user-attachments/assets/84ad0306-e340-4c3f-bac8-74650b1bc355" />
+
 #### Scale Replicas 
 ```
 kubectl scale --replicas=10 rs nginx-rs
@@ -137,7 +140,8 @@ kubectl scale --replicas=10 rs nginx-rs
 kubectl edit rs nginx-rs
 ```
 ### Deployment
-![deploy](./IMG/deploy.png)
+<img width="2002" height="987" alt="image" src="https://github.com/user-attachments/assets/1bcf523d-3211-4a01-8254-2fe3602f1102" />
+
 ```
 kubectl explain deploy
 ```
@@ -164,7 +168,8 @@ nginx-d-d6d49c7d8-bp7gl   1/1     Running   0          112s
 nginx-d-d6d49c7d8-thvzp   1/1     Running   0          112s
 ```
 #### Deployment
-![deploy-1](./IMG/deploy-1.png)
+<img width="3377" height="962" alt="image" src="https://github.com/user-attachments/assets/4f7eb37f-1702-4498-a2c3-6ec4e3a85244" />
+
 
 Note: if Image changed, I will create new POD's using Rolling Update Strategy 
 ```
